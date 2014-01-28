@@ -5,3 +5,11 @@ body{
 	color: white;
 }
 .colright{padding-top:200px;}
+
+#speciallabel{
+	text-align: left;
+	padding-left: 10px;
+}
+.css{
+	margin-top: 17px
+}

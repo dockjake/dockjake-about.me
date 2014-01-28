@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<title>dockjake.about.me
+		</title>
+		<link rel="stylesheet" href="public/css/bootstrap.css" />
+		<link rel="stylesheet" href="public/css/index.css" />
+	</head>
+	<body>
+		<div class="navbar navbar-default" role="navigation"> 
+			<div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+			    <a class="navbar-brand" href="index.html">dockjake.about.me</a>
+			  </div>
+			  <div class="collapse navbar-collapse" id="contactUs">
+			  	<ul class="nav navbar-nav">
+			  		<li class="active"><a href="contact.html">contact us</a>
+			  		</li>
+			  		<li class="active"><a href="signin.html">sign in</a>
+			  		</li>
+			  	</ul>
+			  </div>
+			 
+			  		
+			  		
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8"></div>
+  				<div class="col-md-4 colright">
+  					<form name="contact" role="form">
+  						<div class="form-group">
+  							<label for="exampleInputEmail1">Email address</label>
+    						<input name="email" type="text" class="form-control" placeholder="Enter email">
+  						</div>
+						<textarea name="description" class="form-control" rows="10" placeholder="Description"></textarea>
+						<button onclick="return validate()" type="submit" class="btn btn-default css" >Submit</button>
+					</form>
+  					
+			</div>  
+		</div>
+		<script>
+			function validate(){
+				var email=document.forms.contact.email.value;
+				if (email=="" || email==null){
+					alert("Email address required");
+					return false;
+
+				}
+				var description=document.forms.contact.description.value;
+				if (description=="" || description==null){
+					alert("Description required");
+					return false;
+				}
+			}		
+		</script>
+	 </body>
+</html>
